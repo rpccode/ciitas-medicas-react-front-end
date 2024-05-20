@@ -4,7 +4,7 @@ import { Route } from "../../routes/routes";
 import { Icon } from "@tremor/react";
 
 const SidebarLink = ({ route }:Route) => (
-  <li className="items-center">
+  <li className="items-center ">
     <Link
       className={
         "text-xs uppercase py-3 font-bold block " +
