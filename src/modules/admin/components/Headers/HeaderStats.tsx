@@ -1,7 +1,9 @@
+import { RiBarChart2Line, RiPercentLine, RiPieChart2Line, RiUser2Line } from "@remixicon/react";
 import CardStats from "../Cards/CardStats";
 
 
 export default function HeaderStats() {
+  
   return (
     <>
       {/* Header */}
@@ -18,7 +20,7 @@ export default function HeaderStats() {
                   statPercent="3.48"
                   statPercentColor="text-emerald-500"
                   statDescripiron="Since last month"
-                  statIconName="far fa-chart-bar"
+                  statIconName={RiBarChart2Line}
                   statIconColor="bg-red-500"
                 />
               </div>
@@ -30,7 +32,7 @@ export default function HeaderStats() {
                   statPercent="3.48"
                   statPercentColor="text-red-500"
                   statDescripiron="Since last week"
-                  statIconName="fas fa-chart-pie"
+                  statIconName={RiPieChart2Line}
                   statIconColor="bg-orange-500"
                 />
               </div>
@@ -42,7 +44,7 @@ export default function HeaderStats() {
                   statPercent="1.10"
                   statPercentColor="text-orange-500"
                   statDescripiron="Since yesterday"
-                  statIconName="fas fa-users"
+                  statIconName={RiUser2Line}
                   statIconColor="bg-pink-500"
                 />
               </div>
@@ -54,7 +56,7 @@ export default function HeaderStats() {
                   statPercent="12"
                   statPercentColor="text-emerald-500"
                   statDescripiron="Since last month"
-                  statIconName="fas fa-percent"
+                  statIconName={RiPercentLine}
                   statIconColor="bg-lightBlue-500"
                 />
               </div>

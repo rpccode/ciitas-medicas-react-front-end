@@ -1,3 +1,6 @@
+import { RemixiconComponentType, RiArrowDownLine, RiArrowUpLine, RiBarChart2Line } from "@remixicon/react";
+import { Icon } from "@tremor/react";
+
 interface StatProps {
   statSubtitle?: string;
   statTitle?: string;
@@ -5,7 +8,7 @@ interface StatProps {
   statPercent?: string;
   statPercentColor?: string; // Debe ser una de las utilidades de color de texto de tailwindcss
   statDescripiron?: string;
-  statIconName?: string;
+  statIconName?: RemixiconComponentType;
   statIconColor?: string; // Debe ser una de las utilidades de color de fondo de tailwindcss
 }
 
@@ -17,7 +20,7 @@ export default function CardStats({
   statPercent,
   statPercentColor,
   statDescripiron,
-  statIconName,
+  statIconName = RiBarChart2Line,
   statIconColor,
 }:StatProps) {
   return (
@@ -40,21 +43,21 @@ export default function CardStats({
                   statIconColor
                 }
               >
-                <i className={statIconName}></i>
+                <Icon icon={statIconName} color={statIconColor}/>
               </div>
             </div>
           </div>
           <p className="text-sm text-blueGray-400 mt-4">
             <span className={statPercentColor + " mr-2"}>
-              <i
-                className={
+              <Icon
+                icon={
                   statArrow === "up"
-                    ? "fas fa-arrow-up"
+                    ? RiArrowUpLine
                     : statArrow === "down"
-                    ? "fas fa-arrow-down"
-                    : ""
+                    ? RiArrowDownLine
+                    : RiArrowUpLine
                 }
-              ></i>{" "}
+              ></Icon>{" "}
               {statPercent}%
             </span>
             <span className="whitespace-nowrap">{statDescripiron}</span>
@@ -72,7 +75,7 @@ CardStats.defaultProps = {
   statPercent: "3.48",
   statPercentColor: "text-emerald-500",
   statDescripiron: "Since last month",
-  statIconName: "far fa-chart-bar",
+  statIconName: RiBarChart2Line,
   statIconColor: "bg-red-500",
 };
 

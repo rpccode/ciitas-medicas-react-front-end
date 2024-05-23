@@ -5,7 +5,7 @@ import { BaseTable } from "@/components/BaseTable"
 export const UsuariosPage = () => {
   return (
     <>
-      <BasePage >
+      <BasePage title="Usuarios" >
         <BaseTable/>
       </BasePage>
     </>

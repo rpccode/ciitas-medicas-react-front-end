@@ -6,6 +6,8 @@ import NotificationDropdown from "../Dropdowns/NotificationDropdown";
 import UserDropdown from "../Dropdowns/UserDropdown"
 import SidebarLink from "./SidebarLink";
 import { Route, Routes } from "../../routes/routes";
+import { Icon } from "@tremor/react";
+import { RiCloseLargeLine, RiMenu2Fill } from "@remixicon/react";
 
 
 const Sidebar = ({ routes }:Routes) => {
@@ -21,7 +23,7 @@ const Sidebar = ({ routes }:Routes) => {
             type="button"
             onClick={() => setCollapseShow("bg-white m-2 py-3 px-6")}
           >
-            <i className="fas fa-bars"></i>
+            <Icon  icon={RiMenu2Fill}/>
           </button>
           {/* Brand */}
           <Link
@@ -63,7 +65,8 @@ const Sidebar = ({ routes }:Routes) => {
                     className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
                     onClick={() => setCollapseShow("hidden")}
                   >
-                    <i className="fas fa-times"></i>
+                    <Icon  icon={RiCloseLargeLine} color="blue"/>
+
                   </button>
                 </div>
               </div>
