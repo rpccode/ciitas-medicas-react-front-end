@@ -14,7 +14,7 @@ const SplashScreen = () => {
       } else {
         navigate('/auth/login'); // Redirige al login si no está autenticado
       }
-    }, 8000); // Simula un tiempo de carga
+    }, 2000); // Simula un tiempo de carga
   }, [navigate]);
 
   return (

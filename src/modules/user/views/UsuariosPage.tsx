@@ -1,7 +1,14 @@
+import PageBase from "@/components/PageBase"
+import { UserTable } from "../components/UserTable"
 
 
-export const UsuariosPage = () => {
+
+const UsuariosPage = () => {
   return (
-    <div>UsuariosPage</div>
+    <PageBase pageName={"Usuarios"} PageTitle={"Listado de Usuario"}>
+      <UserTable/>
+    </PageBase>
   )
 }
+
+export default UsuariosPage

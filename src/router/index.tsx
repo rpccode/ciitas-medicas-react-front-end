@@ -7,7 +7,7 @@ import Dashboard from "@/modules/admin/views/Dashboard"
 import SplashScreen from "@/views/SplashScreen"
 import { MedicosPage } from "@/modules/user/views/MedicosPage"
 import { PersonalPage } from "@/modules/user/views/PersonalPage"
-import { UsuariosPage } from "@/modules/user/views/UsuariosPage"
+import  UsuariosPage  from "@/modules/user/views/UsuariosPage"
 
 
 const routerApp = () => {
