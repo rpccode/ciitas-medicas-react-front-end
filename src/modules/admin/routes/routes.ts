@@ -34,7 +34,6 @@ export interface Route {
 const routes:Routes = {
     admin: [
       { name: 'Dashboard', path: '/admin/dashboard', icon: RiTv2Line },
-      { name: 'Settings', path: '/admin/settings', icon: RiToolsLine },
       { name: 'Tables', path: '/admin/tables', icon: RiTableLine },
       { name: 'Maps', path: '/admin/maps', icon: RiMapLine },
     ],
@@ -43,6 +42,7 @@ const routes:Routes = {
       { name: 'Medicos', path: '/admin/medicos', icon: RiNurseLine },
       { name: 'Roles', path: '/admin/maps', icon: RiNurseLine },
       { name: 'Personal', path: '/admin/personal', icon: RiUser4Line },
+      { name: 'Profile Page', path: '/profile', icon: RiUserSettingsLine },
 
     ],
     Configuracion: [
@@ -50,7 +50,8 @@ const routes:Routes = {
       { name: 'Especialidades', path: '/profile', icon: RiAddBoxLine },
       { name: 'Servicicos', path: '/profile', icon: RiServiceLine },
       { name: 'Tratamiientos', path: '/landing', icon:  RiTestTubeLine },
-      { name: 'Profile Page', path: '/profile', icon: RiUserSettingsLine },
+      { name: 'Configuracion', path: '/admin/configuracion', icon: RiToolsLine },
+    
     ],
  
   };
