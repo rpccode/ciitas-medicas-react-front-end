@@ -10,11 +10,11 @@ const AdminLayout = () => {
   return (
     <>
     <Sidebar routes={routes} />
-    <div className="relative md:ml-64 bg-blueGray-100">
+    <div className="relative md:ml-64 bg-blueGray-100 ">
       <AdminNavbar />
-      {/* Header */}
       <HeaderStats />
-      <div className="px-4 md:px-10 mx-auto w-full -m-24">
+      {/* Header */}
+      <div className="px-4 md:px-10 mx-auto w-full -m-24 ">
        <Outlet/>
         <FooterAdmin />
       </div>

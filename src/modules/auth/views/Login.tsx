@@ -45,6 +45,11 @@ const Login = () => {
                     <TextInput
                       title="Email"
                       placeholder="Email"
+                      style={{
+                        backgroundColor: 'white',
+                        color:'gray'
+                      }}
+                      
                       error={errors.correo && true}
                       errorMessage={errors?.correo?.message}
                       {...register("correo", {
@@ -66,6 +71,10 @@ const Login = () => {
                       title="Password"
                       placeholder="Password"
                       type="password"
+                    style={{
+                      backgroundColor: 'white',
+                      color:'gray'
+                    }}
                       error={errors.clave && true}
                       errorMessage={errors?.clave?.message}
                       {...register("clave", {
@@ -79,7 +88,7 @@ const Login = () => {
                       <input
                         id="customCheckLogin"
                         type="checkbox"
-                        className="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
+                        className="form-checkbox border-1 rounded text-blue-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
                       />
                       <span className="ml-2 text-sm font-semibold text-blueGray-600">
                         Remember me
@@ -103,13 +112,13 @@ const Login = () => {
                 <a
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
-                  className="text-blue-500"
+                  className="text-white"
                 >
                   <small>Forgot password?</small>
                 </a>
               </div>
               <div className="w-1/2 text-right">
-                <Link to="/auth/register" className="text-blue-200">
+                <Link to="/auth/register" className="text-white">
                   <small>Create new account</small>
                 </Link>
               </div>
