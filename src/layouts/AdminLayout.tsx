@@ -10,11 +10,11 @@ const AdminLayout = () => {
   return (
     <>
     <Sidebar routes={routes} />
-    <div className="relative md:ml-64 bg-blueGray-100 ">
+    <div className="relative md:ml-64 bg-blueGray-100 animate__animated  animate__fadeIn animate__delay-1s">
       <AdminNavbar />
       <HeaderStats />
       {/* Header */}
-      <div className="px-4 md:px-10 mx-auto w-full -m-24 ">
+      <div className="px-4 md:px-10 mx-auto w-full -m-24 animate__animated  animate__fadeIn ">
        <Outlet/>
         <FooterAdmin />
       </div>

@@ -7,7 +7,7 @@ import CardSocialTraffic from "../components/Cards/CardSocialTraffic"
 const Dashboard = () => {
   return (
     <>
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap  animate__fadeIn">
       <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
         <CardLineChart />
       </div>
