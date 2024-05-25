@@ -13,6 +13,10 @@
       "@/assets/*":["assets/*"],
       "@/components/*":["components/*"],
       "@/libs/*":["libs/*"],
+      "@/hooks/*":["hooks/*"],
+      "@/store/*":["store/*"],
+
+
 
 
 

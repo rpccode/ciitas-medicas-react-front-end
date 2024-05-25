@@ -60,7 +60,9 @@ const data = [
 
 export function BaseTable() {
   return (
-    <Card>
+    <Card
+    className="dark:bg-tremor-background-emphasis"
+    >
       <h3 className="text-tremor-content-strong dark:text-dark-tremor-content-strong font-semibold">List of Swiss Federal Councillours</h3>
       <Table className="mt-5">
         <TableHead>
